@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom UI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="help-container">
+    <span class="help-icon" onclick="toggleHelp()">ℹ️</span>
+
+    <div class="help-box" id="helpBox">
+        <p><b>+</b> : Adds two numbers</p>
+        <p><b>-</b> : Subtracts one number from another</p>
+        <p><b>×</b> : Multiplies two numbers</p>
+        <p><b>÷</b> : Divides one number by another</p>
+        <p><b>%</b> : Finds remainder</p>
+    </div>
+</div>
+
+            <input id="display" type="text" disabled>
+
+            <div class="buttons">
+                <button class="btn clear" onclick="clearDisplay()">C</button>
+                <button class="btn cancel" onclick="cancelLast()">←</button>
+                <button class="btn operator" onclick="press('%')">%</button>
+                <button class="btn operator" onclick="press('/')">÷</button>
+
+                <button class="btn" onclick="press('7')">7</button>
+                <button class="btn" onclick="press('8')">8</button>
+                <button class="btn" onclick="press('9')">9</button>
+                <button class="btn operator" onclick="press('*')">×</button>
+
+                <button class="btn" onclick="press('4')">4</button>
+                <button class="btn" onclick="press('5')">5</button>
+                <button class="btn" onclick="press('6')">6</button>
+                <button class="btn operator" onclick="press('-')">−</button>
+
+                <button class="btn" onclick="press('1')">1</button>
+                <button class="btn" onclick="press('2')">2</button>
+                <button class="btn" onclick="press('3')">3</button>
+                <button class="btn operator" onclick="press('+')">+</button>
+
+                <button class="btn double-zero" onclick="press('00')">00</button>
+                <button class="btn" onclick="press('0')">0</button>
+                <button class="btn" onclick="press('.')">.</button>
+                <button class="btn equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
