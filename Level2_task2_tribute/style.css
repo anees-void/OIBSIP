@@ -16,10 +16,7 @@ body {
 .hero {
     height: 100vh;
     background-color: #000;
-    background-image: url("football-sketch.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    /* removed missing image to avoid errors */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +55,6 @@ body {
 .white {
     background-color: #fff;
     color: #000;
-    overflow: visible;
 }
 
 .black {
@@ -66,16 +62,14 @@ body {
     color: #fff;
 }
 
-/* IMAGE (FORCED VISIBLE) */
+/* ZIDANE IMAGES */
 .zidane-img {
-    width: 180px;
+    width: 300px;      /* bigger so full image is visible */
+    height: auto;      /* keeps original ratio */
     display: block;
     margin: 0 auto 25px auto;
-    border-radius: 50%;
-    filter: grayscale(100%);
+    border-radius: 0;  /* <-- THIS FIXES THE OVAL */
     border: 3px solid #000;
-    position: relative;
-    z-index: 100;
 }
 
 /* QUOTE */
