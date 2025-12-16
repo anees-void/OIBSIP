@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background-color: #000;
+    background-image: url("football-sketch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    border: 2px solid #fff;
+    padding: 40px 50px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* COLOR THEMES */
+.white {
+    background-color: #fff;
+    color: #000;
+    overflow: visible;
+}
+
+.black {
+    background-color: #000;
+    color: #fff;
+}
+
+/* IMAGE (FORCED VISIBLE) */
+.zidane-img {
+    width: 180px;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: 3px solid #000;
+    position: relative;
+    z-index: 100;
+}
+
+/* QUOTE */
+blockquote {
+    font-size: 22px;
+    font-style: italic;
+    border-left: 4px solid #000;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+    background-color: #000;
+}
