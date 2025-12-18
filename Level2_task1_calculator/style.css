@@ -1,3 +1,9 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
     display: flex;
     justify-content: center;
@@ -5,124 +11,165 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background:
-        linear-gradient(135deg, #bdbdbd, #9e9e9e),
-        repeating-linear-gradient(
-            45deg,
-            rgba(255,255,255,0.05),
-            rgba(255,255,255,0.05) 10px,
-            rgba(0,0,0,0.05) 10px,
-            rgba(0,0,0,0.05) 20px
-        );
-    color: white;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #ffffff;
 }
 
+/* CALCULATOR CONTAINER */
 .calculator-container {
-    background: rgba(128, 0, 128, 0.9);
-    padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.35);
+    background: #111;
+    padding: 22px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
 }
 
+/* CALCULATOR */
 .calculator {
-    width: 350px;
+    width: 340px;
 }
 
+/* DISPLAY */
 #display {
     width: 100%;
-    height: 55px;
-    margin-bottom: 15px;
-    font-size: 26px;
+    height: 60px;
+    margin-bottom: 18px;
+    font-size: 28px;
     text-align: right;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    background: #2c2c2c;
-    color: white;
-    border-radius: 12px;
-    box-sizing: border-box;
+    outline: none;
+    background: #000;
+    color: #fff;
+    border-radius: 14px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
+/* BUTTON GRID */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 14px;
 }
 
+/* COMMON BUTTON */
 .btn {
-    position: relative;
     padding: 20px;
     font-size: 20px;
     border: none;
-    background: #6a0dad;
-    color: white;
-    border-radius: 14px;
+    border-radius: 16px;
+    background: #1f1f1f;
+    color: #ffffff;
     cursor: pointer;
-    overflow: hidden;
-    transition: background 0.3s, transform 0.15s ease;
+    transition: 
+        transform 0.15s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
+/* BUTTON HOVER & ACTIVE */
+.btn:hover {
+    background: #2a2a2a;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* OPERATOR BUTTONS */
+.operator {
+    background: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}
+
+.operator:hover {
+    background: #e0e0e0;
+}
+
+/* CLEAR BUTTON */
+.clear {
+    background: #d9d9d9;
+    color: #000;
+    font-weight: bold;
+}
+
+.clear:hover {
+    background: #c4c4c4;
+}
+
+/* CANCEL BUTTON */
+.cancel {
+    background: #333333;
+    color: #ffffff;
+}
+
+.cancel:hover {
+    background: #444444;
+}
+
+/* EQUAL BUTTON */
+.equal {
+    background: #ffffff;
+    color: #000;
+    font-weight: bold;
+}
+
+.equal:hover {
+    background: #e0e0e0;
+}
+
+/* DOUBLE ZERO */
+.double-zero {
+    background: #1f1f1f;
+}
+
+.double-zero:hover {
+    background: #2a2a2a;
+}
+
+/* REMOVE OLD DECORATIVE DOTS */
 .btn::before,
 .btn::after {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.18);
+    display: none;
 }
 
-.btn::before { top: -6px; left: -6px; }
-.btn::after { bottom: -6px; right: -6px; }
-
-.btn:hover { background: #5a0a9f; }
-.btn:active { transform: scale(0.95); }
-
-.operator { background: #6a0dad; }
-.operator:hover { background: #5a0a9f; }
-
-.clear { background: #ffd700; color: black; }
-.clear:hover { background: #e5c100; }
-
-.cancel { background: #ff0000; color: white; }
-.cancel:hover { background: #cc0000; }
-
-.equal { background: #4CAF50; color: white; }
-.equal:hover { background: #45a049; }
-
-.double-zero { background: #6a0dad; }
-.double-zero:hover { background: #5a0a9f; }
-
-.operator::before, .operator::after,
-.clear::before, .clear::after,
-.cancel::before, .cancel::after,
-.equal::before, .equal::after { display: none; }
+/* HELP ICON */
 .help-container {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .help-icon {
     font-size: 18px;
     cursor: pointer;
     user-select: none;
+    color: #aaa;
 }
 
+.help-icon:hover {
+    color: #fff;
+}
+
+/* HELP BOX */
 .help-box {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 28px;
     right: 0;
-    background: #1e1e1e;
-    padding: 10px;
-    border-radius: 10px;
+    background: #000;
+    padding: 12px;
+    border-radius: 12px;
     width: 220px;
     font-size: 14px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
     z-index: 10;
 }
 
 .help-box p {
     margin: 6px 0;
+    color: #ddd;
 }
