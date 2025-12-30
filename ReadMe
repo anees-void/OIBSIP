@@ -1,0 +1,43 @@
+📌 OIBSIP Internship Projects
+
+This repository showcases all the projects completed during my Oasis Infobyte (OIBSIP) internship. The tasks are organized based on development level, improving step-by-step from basic UI to functional JavaScript applications.
+
+
+---
+
+ Level 2 – Intermediate Web Development Projects
+
+Intermediate projects built with HTML, CSS, and JavaScript, focusing on logic, interactivity, and user experience.
+
+1️⃣ Calculator
+
+A functional calculator capable of performing basic arithmetic operations such as Addition, Subtraction, Multiplication, and Division with a clean UI and responsive layout.
+
+Tech Used: HTML, CSS, JavaScript.
+
+
+---
+
+2️⃣ Tribute Page
+
+A dedicated tribute webpage for a notable personality, highlighting structured layout, clean presentation, and basic web styling techniques.
+
+Tech Used: HTML, CSS.
+
+
+---
+
+3️⃣ To-Do List Web App
+
+A simple task management application that allows users to add and delete tasks, providing a smooth and interactive experience.
+
+Tech Used: HTML, CSS, JavaScript.
+
+
+---
+
+4️⃣ Login Authentication System
+
+A basic login authentication system featuring Register, Login, and Secured Page access. User credentials are stored and verified using localStorage.
+
+Tech Used: HTML, CSS, JavaScript.
