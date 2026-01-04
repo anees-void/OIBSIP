@@ -59,11 +59,11 @@ body {
 }
 
 .zidane-img {
-    width: 300px;      /* bigger so full image is visible */
-    height: auto;      /* keeps original ratio */
+    width: 300px;      
+    height: auto;      
     display: block;
     margin: 0 auto 25px auto;
-    border-radius: 0;  /* <-- THIS FIXES THE OVAL */
+    border-radius: 0;  
     border: 3px solid #000;
 }
 
