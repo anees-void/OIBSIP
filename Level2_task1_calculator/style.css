@@ -1,9 +1,8 @@
-/* RESET */
+
 * {
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     display: flex;
     justify-content: center;
@@ -15,7 +14,6 @@ body {
     color: #ffffff;
 }
 
-/* CALCULATOR CONTAINER */
 .calculator-container {
     background: #111;
     padding: 22px;
@@ -23,12 +21,10 @@ body {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8);
 }
 
-/* CALCULATOR */
 .calculator {
     width: 340px;
 }
 
-/* DISPLAY */
 #display {
     width: 100%;
     height: 60px;
@@ -44,14 +40,12 @@ body {
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
-/* BUTTON GRID */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
 }
 
-/* COMMON BUTTON */
 .btn {
     padding: 20px;
     font-size: 20px;
@@ -67,7 +61,6 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
-/* BUTTON HOVER & ACTIVE */
 .btn:hover {
     background: #2a2a2a;
 }
@@ -77,7 +70,6 @@ body {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
 }
 
-/* OPERATOR BUTTONS */
 .operator {
     background: #ffffff;
     color: #000000;
@@ -88,7 +80,6 @@ body {
     background: #e0e0e0;
 }
 
-/* CLEAR BUTTON */
 .clear {
     background: #d9d9d9;
     color: #000;
@@ -99,7 +90,6 @@ body {
     background: #c4c4c4;
 }
 
-/* CANCEL BUTTON */
 .cancel {
     background: #333333;
     color: #ffffff;
@@ -109,7 +99,6 @@ body {
     background: #444444;
 }
 
-/* EQUAL BUTTON */
 .equal {
     background: #ffffff;
     color: #000;
@@ -120,7 +109,6 @@ body {
     background: #e0e0e0;
 }
 
-/* DOUBLE ZERO */
 .double-zero {
     background: #1f1f1f;
 }
@@ -129,13 +117,11 @@ body {
     background: #2a2a2a;
 }
 
-/* REMOVE OLD DECORATIVE DOTS */
 .btn::before,
 .btn::after {
     display: none;
 }
 
-/* HELP ICON */
 .help-container {
     position: relative;
     display: flex;
@@ -154,7 +140,6 @@ body {
     color: #fff;
 }
 
-/* HELP BOX */
 .help-box {
     display: none;
     position: absolute;
